@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private ParticleSystem dust;
+    [SerializeField] private ParticleSystem grass;
     
 
     void Awake()
@@ -115,7 +116,7 @@ public class Player : MonoBehaviour
     }
 
     public void PlayDustAnimation(){
-        dust.Play();
+        grass.Play();
     }
     
 }
